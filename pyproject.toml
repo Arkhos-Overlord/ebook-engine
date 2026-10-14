@@ -1,0 +1,55 @@
+[project]
+name = "ebook-engine"
+version = "1.0.0"
+description = "Generate, format, publish and read sellable ebooks."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "ebooklib>=0.18",
+    "Pillow>=10.0",
+    "markdown>=3.5",
+    "reportlab>=4.0",
+    "pypdf>=4.0",
+    "requests>=2.31",
+    "openai>=1.6",
+    "python-dotenv>=1.0",
+    "rich>=13.0",
+    "jinja2>=3.1",
+    "lxml>=4.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+ebook = "ebook_engine.main:cli"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# This file lives inside the package itself, so setuptools must be told
+# that packages resolve from the parent directory.
+package-dir = {"" = ".."}
+packages = ["ebook_engine", "ebook_engine.formatters"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Entry points bootstrap sys.path before the package imports.
+"main.py" = ["E402"]
+"batch_generate.py" = ["E402"]
+# One-off manuscript builder kept for provenance.
+"books/**" = ["E402", "E702", "E401"]

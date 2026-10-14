@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ebook Library</title>
+<style>
+{% include "reader.css" %}
+</style>
+</head>
+<body class="library">
+<header class="topbar">
+  <h1>Ebook Library</h1>
+  <span class="count">{{ books|length }} book{{ "" if books|length == 1 else "s" }} with a readable EPUB</span>
+</header>
+
+{% if error %}
+<p class="notice">{{ error }}</p>
+{% endif %}
+
+{% if not books %}
+<main class="empty">
+  <p>No published books have an EPUB yet.</p>
+  <p class="hint">Generate and publish one first:</p>
+  <pre>python main.py generate "Digital Marketing" business
+python main.py publish 1</pre>
+</main>
+{% else %}
+<main class="grid">
+  {% for b in books %}
+  <a class="card" href="/read/{{ b.id }}">
+    <div class="thumb">
+      {% if b.cover_path %}
+      <img src="/cover/{{ b.id }}" alt="" loading="lazy"
+           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'placeholder',textContent:'{{ (b.title[:1])|e }}'}))">
+      {% else %}
+      <span class="placeholder">{{ (b.title[:1])|e }}</span>
+      {% endif %}
+    </div>
+    <div class="meta">
+      <h2>{{ b.title }}</h2>
+      <p class="byline">{{ b.author or "Unknown author" }}</p>
+      <p class="tags">
+        {% if b.genre %}<span class="tag">{{ b.genre }}</span>{% endif %}
+        <span class="tag status">{{ b.status }}</span>
+      </p>
+    </div>
+  </a>
+  {% endfor %}
+</main>
+{% endif %}
+</body>
+</html>

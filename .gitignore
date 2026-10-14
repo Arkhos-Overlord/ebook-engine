@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.db
+state/
+output/
+cache/
+.env
+.venv/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,290 @@
+{
+  "Cryptocurrency": {
+    "primary": [
+      15,
+      52,
+      86
+    ],
+    "secondary": [
+      0,
+      150,
+      180
+    ],
+    "icon": "\u20bf",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Digital Marketing": {
+    "primary": [
+      44,
+      62,
+      80
+    ],
+    "secondary": [
+      52,
+      152,
+      219
+    ],
+    "icon": "\ud83d\udcca",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "E-commerce": {
+    "primary": [
+      39,
+      174,
+      96
+    ],
+    "secondary": [
+      46,
+      204,
+      113
+    ],
+    "icon": "\ud83d\uded2",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Fitness & Nutrition": {
+    "primary": [
+      192,
+      57,
+      43
+    ],
+    "secondary": [
+      231,
+      76,
+      60
+    ],
+    "icon": "\ud83d\udcaa",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Freelancing": {
+    "primary": [
+      52,
+      73,
+      94
+    ],
+    "secondary": [
+      142,
+      68,
+      173
+    ],
+    "icon": "\ud83d\udcbb",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Index Investing": {
+    "primary": [
+      22,
+      100,
+      160
+    ],
+    "secondary": [
+      41,
+      128,
+      185
+    ],
+    "icon": "\ud83d\udcc8",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Indian Cooking": {
+    "primary": [
+      142,
+      68,
+      173
+    ],
+    "secondary": [
+      230,
+      126,
+      34
+    ],
+    "icon": "\ud83c\udf5b",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Meditation & Mindfulness": {
+    "primary": [
+      44,
+      62,
+      80
+    ],
+    "secondary": [
+      142,
+      68,
+      173
+    ],
+    "icon": "\ud83e\uddd8",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Personal Development": {
+    "primary": [
+      192,
+      57,
+      43
+    ],
+    "secondary": [
+      231,
+      76,
+      60
+    ],
+    "icon": "\ud83e\udde0",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Photography": {
+    "primary": [
+      22,
+      100,
+      160
+    ],
+    "secondary": [
+      142,
+      68,
+      173
+    ],
+    "icon": "\ud83d\udcf7",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Real Estate Investing": {
+    "primary": [
+      39,
+      174,
+      96
+    ],
+    "secondary": [
+      142,
+      68,
+      173
+    ],
+    "icon": "\ud83c\udfe0",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Stock Trading": {
+    "primary": [
+      22,
+      100,
+      160
+    ],
+    "secondary": [
+      0,
+      150,
+      180
+    ],
+    "icon": "\ud83d\udcca",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Term Insurance": {
+    "primary": [
+      44,
+      62,
+      80
+    ],
+    "secondary": [
+      22,
+      100,
+      160
+    ],
+    "icon": "\ud83d\udee1\ufe0f",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Travel": {
+    "primary": [
+      0,
+      130,
+      200
+    ],
+    "secondary": [
+      240,
+      120,
+      60
+    ],
+    "icon": "\u2708\ufe0f",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Web Development": {
+    "primary": [
+      0,
+      100,
+      150
+    ],
+    "secondary": [
+      0,
+      180,
+      220
+    ],
+    "icon": "\ud83d\udcbb",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "YouTube Content": {
+    "primary": [
+      220,
+      50,
+      50
+    ],
+    "secondary": [
+      240,
+      80,
+      80
+    ],
+    "icon": "\u25b6\ufe0f",
+    "text_color": [
+      255,
+      255,
+      255
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ chapter.title }} — {{ book.title }}</title>
+{# Book stylesheet FIRST, reader chrome SECOND. On equal specificity the
+   later rule wins, so the chrome must be last or the book's
+   `body { color: #1a1a1a }` paints dark text on our dark background. #}
+<style>{{ book_css | safe }}</style>
+<style>
+{% include "reader.css" %}
+</style>
+</head>
+<body class="reader">
+<header class="topbar">
+  <a class="back" href="/">&larr; Library</a>
+  <div class="bookname">
+    <strong>{{ book.title }}</strong>
+    <span>{{ book.author_or_unknown }}</span>
+  </div>
+  <div class="pager">
+    {% if page > 1 %}
+    <a class="btn" href="/read/{{ book_id }}?p={{ page - 1 }}">&larr; Prev</a>
+    {% endif %}
+    <span class="pos">{{ page }} / {{ total }}</span>
+    {% if page < total %}
+    <a class="btn" href="/read/{{ book_id }}?p={{ page + 1 }}">Next &rarr;</a>
+    {% endif %}
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Contents</h2>
+    <ol>
+      {% for c in chapters %}
+      <li class="{{ 'current' if c.number == page }}">
+        <a href="/read/{{ book_id }}?p={{ c.number }}">{{ c.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+    {% if has_cover %}
+    <figure class="cover">
+      <img src="{{ cover_url }}" alt="Cover of {{ book.title }}">
+    </figure>
+    {% endif %}
+  </aside>
+
+  <main class="content">
+    <article>
+      <p class="eyebrow">Chapter {{ page }} of {{ total }}</p>
+      <h1>{{ chapter.title }}</h1>
+      {{ body_html | safe }}
+    </article>
+
+    <nav class="pager bottom">
+      {% if page > 1 %}
+      <a class="btn" href="/read/{{ book_id }}?p={{ page - 1 }}">&larr; {{ chapters[page - 2].title }}</a>
+      {% endif %}
+      {% if page < total %}
+      <a class="btn next" href="/read/{{ book_id }}?p={{ page + 1 }}">{{ chapters[page].title }} &rarr;</a>
+      {% endif %}
+    </nav>
+  </main>
+</div>
+</body>
+</html>

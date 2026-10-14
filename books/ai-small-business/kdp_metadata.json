@@ -1,0 +1,37 @@
+{
+  "title": "AI for Small Business Owners",
+  "subtitle": "How to Use ChatGPT and AI Tools to Automate the Work You Hate, Reclaim Ten Hours a Week, and Grow Without Hiring",
+  "author": "Jordan Vale",
+  "language": "English",
+  "publisher": "Vale Press",
+  "publication_date": "2026-09-25",
+  "isbn": "",
+  "description_html": "<p><b>Stop doing work a machine can do.</b> Most small business owners lose ten hours a week to the same patterned tasks: enquiry replies, quotes, follow-ups, invoices, social posts, paperwork. This book shows you exactly which of those hours a machine can take back - and which work must stay yours.</p><p>Written for skeptical, time-poor owners, not technologists, it gives you a step-by-step ninety-day plan: the three-day audit that finds your ten hours, the prompting skill that makes AI output actually usable, ready workflows for customer messages, marketing, quotes and the back office, your first hands-off automation, and the boundary rules that keep your customers' data and your reputation safe.</p><p>No hype. No jargon. One action per week, with the honest numbers behind every claim. If you can follow instructions and send a message, you can run everything in this book.</p>",
+  "keywords": [
+    "AI for small business",
+    "ChatGPT for business owners",
+    "automate small business tasks",
+    "AI productivity guide",
+    "small business automation",
+    "AI tools for entrepreneurs",
+    "reclaim time small business",
+    "ChatGPT prompts for business"
+  ],
+  "categories": [
+    "Business & Money > Small Business & Entrepreneurship > Home-Based",
+    "Business & Money > Skills > Business Writing",
+    "Computers & Technology > Applications & Software > AI & Machine Learning",
+    "Business & Money > Processes & Infrastructure > Office Automation"
+  ],
+  "price_usd_ebook": 4.99,
+  "royalty_note": "70% band on Amazon.com runs $2.99-$12.99; royalty approx $3.43/copy at $4.99 less ~$0.06 delivery",
+  "files": {
+    "epub": "output/AI for Small Business Owners - Jordan Vale.epub",
+    "pdf": "output/AI for Small Business Owners - Jordan Vale.pdf",
+    "cover_full": "output/cover_1600x2560.png",
+    "cover_thumb": "output/cover_thumb_600x900.png"
+  },
+  "kindle_unlimited": "Eligible - enroll in KDP Select for KU page reads (recommended first 90 days)",
+  "pricing_strategy": "Launch at $4.99 (70% band, $3.43/copy). Raise to $6.99-$7.99 after 20+ reviews. Paperback at $12.99 when interior approved.",
+  "author_bio": "Jordan Vale writes practical guides for small business owners. Fifteen years around service businesses, retail, and solo operators - no software background required, and no patience for hype."
+}
